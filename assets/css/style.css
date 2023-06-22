@@ -1,0 +1,27 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+    background-color: chocolate;
+}
+/* Scrollbar */
+/*
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
