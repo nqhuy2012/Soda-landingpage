@@ -28,12 +28,14 @@ mobile_toogle.addEventListener("click", () => {
 /**
  * Scroll to top
  */
-// let scroll_top_btn = document.querySelector("");
-// window.addEventListener("scroll", () => {
-//     let position = window.scrollY;
-//     if(position > 200){
-//         scroll_top_btn.style.display = "block";
-//     }else{
-//         scroll_top_btn.style.display = "none";
-//     }
-// });
+let scroll_top_btn = document.querySelector(".scroll-to-top");
+window.addEventListener("scroll", () => {
+    let position = window.scrollY;
+    if(position > 200){
+        scroll_top_btn.style.opacity = "0.7";
+        scroll_top_btn.style.pointerEvents = "all";
+    }else{
+        scroll_top_btn.style.opacity = "0";
+        scroll_top_btn.style.pointerEvents = "none";
+    }
+});
