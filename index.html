@@ -3,16 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta property="og:image" content="Liên kết hình ảnh"> -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Sodawik</title>
+    <link rel="stylesheet" href="./assets/libs/FA/css/all.min.css">
+    <link rel="stylesheet" href="./assets/libs/AOS/dist/aos.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1 style="color: white;">SODA<span style="color: rgb(255, 164, 132);">WIK</span></h1>
-    <img src="./assets/images/img-1.png" alt="">
-    <a href="#">Scroll to top</a>
-
-
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <h4 data-aos="fade-down">Soda<span>wik</span></h4>
+                <div class="header__logo-overlay"></div>
+            </div>
+            <ul class="header__menu" data-aos="fade-down">
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#drink">Drink</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#about-us">About us</a>
+                </li>
+            </ul>
+            <div class="header__menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-image">
+            <div class="hero-image__inner" data-aos="fade-up">
+                <img src="./assets/images/img-1.png" alt="">
+            </div>
+            <h2 data-aos="fade-right">
+                <span>irresistible</span>
+            </h2>
+            <div class="hero-image__overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-content-info" data-aos="fade-left">
+                <h1>Give your thirst a <span>taste</span></h1>
+                <p>Treat your senses and try the irresistible taste our new take on a classic flavor.</p>
+                <div class="hero-content__buttons">
+                    <button class="hero-content__order-button">Order Now</button>
+                    <button class="hero-content__play-button">
+                        <img src="assets/images/play-circle.svg" alt="play" />
+                        How to Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="about-us__content">
+            <p class="about-us__subtitle" data-aos="fade-up">About Us</p>
+            <h3 class="about-us__title" data-aos="fade-right">
+                NOT ALL THE FRUIT FLAVORS,<br>
+                <span>BUT WE'RE GETTING THERE</span>
+            </h3>
+            <p class="about-us__description" data-aos="fade-right">We are always actively learning the needs of our users and are passionate about creating great-tasting beverages.</p>
+        </div>
+        <div class="about-us__images">
+            <div class="about-us__images-1">
+                <img src="./assets/images/about-us/img-can-1.png" alt="" data-aos="fade-up" data-aos-delay="100">
+            </div>
+            <div class="about-us__images-2">
+                <img src="./assets/images/about-us/img-can-2.png" alt="" data-aos="fade-up" data-aos-delay="70">
+            </div>
+            <div class="about-us__images-3">
+                <img src="./assets/images/about-us/img-can-3.png" alt="" data-aos="fade-up" data-aos-delay="150">
+            </div>
+            <div class="about-us__images-4">
+                <img src="./assets/images/about-us/img-1.png" alt="" data-aos="zoom-in" data-aos-delay="100">
+            </div>
+            <div class="about-us__images-5">
+                <img src="./assets/images/about-us/img-2.png" alt="" data-aos="zoom-in">
+            </div>
+            <div class="about-us__images-6">
+                <img src="./assets/images/about-us/img-3.png" alt="" data-aos="zoom-in" data-aos-delay="150">
+            </div>
+            <div class="about-us__images-7">
+                <img src="./assets/images/about-us/img-4.png" alt="" data-aos="zoom-in" data-aos-delay="170">
+            </div>
+        </div>
+        <div class="about-us__overlay"></div>
+    </section>
+    <section class="popular-drinks" id="menu">
+        <h2 class="popular-drinks__title" data-aos="flip-up">Popular Drinks</h2>
+        <p class="popular-drinks__subtitle" data-aos="fade-down">Recommend to you</p>
+        <div class="popular-drinks__icon">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="popular-drinks__list">
+            <div class="popular-drinks__drink-card">
+                <div class="popular-drinks__drink-box" style="--drink-color: #ffd142;">
+                    <img src="./assets/images/menu/img-1.png" alt="">
+                    <div class="popular-drinks__price">$0.42</div>
+                </div>
+                <div class="popular-drinks__drink-title">Lemon</div>
+            </div>
+            <div class="popular-drinks__drink-card">
+                <div class="popular-drinks__drink-box" style="--drink-color: #e47564;">
+                    <img src="./assets/images/menu/img-2.png" alt="">
+                    <div class="popular-drinks__price">$0.42</div>
+                </div>
+                <div class="popular-drinks__drink-title">Peach</div>
+            </div>
+            <div class="popular-drinks__drink-card">
+                <div class="popular-drinks__drink-box" style="--drink-color: #504dd1;">
+                    <img src="./assets/images/menu/img-5.png" alt="">
+                    <div class="popular-drinks__price">$0.42</div>
+                </div>
+                <div class="popular-drinks__drink-title">Blueberries</div>
+            </div>
+        </div>
+        <button class="popular-drinks__button">
+            Explore Drink
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+        <div class="popular-drinks__overlay"></div>
+    </section>
+    <section class="trending" id="drink">
+        <p class="trending__subtitle" data-aos="fade-right">What's Trending</p>
+        <div class="trending__list-card">
+            <div class="trending__card" style="--trending-card-color:#f99718;" data-aos="zoom-in-up">
+                <img src="./assets/images/img-3.png" alt="">
+                <div class="trending__card-infor">
+                    <h3 class="trending__card-title">Orange</h3>
+                    <p class="trending__card-description">The sweet orange flavor has long been loved by many young people because of its refreshing taste, awakening all senses and bringing bursts of joy with friends.</p>
+                    <button class="trending__card--button">EXPLORE</button>
+                </div>
+            </div>
+            <div class="trending__card" style="--trending-card-color:#31b6a3;" data-aos="zoom-in-up" data-aos-delay="100">
+                <img src="./assets/images/img-2.png" alt="">
+                <div class="trending__card-infor">
+                    <h3 class="trending__card-title">Blueberries</h3>
+                    <p class="trending__card-description">New sweet and sour blueberry flavor product combined with light gas taste, Blueberry Soda will be a very new choice, sweet and sour, delicious twisting the tongue!</p>
+                    <button class="trending__card--button">EXPLORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="services__title" data-aos="flip-up">Get offers stright to your inbox</h2>
+        <p class="services__subtitle" data-aos="fade-up" data-aos-duration="500">Sign up for newsletter</p>
+        <form action="">
+            <div class="services__input-layout" data-aos="fade-up" data-aos-duration="700">
+                <input type="text" placeholder="Enter your email address" class="services__input" id="services__input">
+                <button type="submit" class="services__button">Get Started</button>
+            </div>
+        </form>
+        <div class="services__overlay"></div>
+    </section>
+    <footer class="footer">
+        <div class="footer__logo">
+            <h4>Soda<span>wik</span></h4>
+        </div>
+        <div class="footer__nav">
+            <h3>CONTENT & INFORMATION</h3>
+            <ul class="footer__menu">
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#drink">Drink</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#about-us">About us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__nav">
+            <h3>HELP</h3>
+            <ul class="footer__menu">
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Status</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__social-media">
+            <h3>SOCIAL MEDIA</h3>
+            <ul class="social-media__menu">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+            </ul>
+            <p class="link-source-code">Source code: <a href="">Click here</a>.</p>
+        </div>
+    </footer>
+    <div class="scroll-to-top"></div>
+    <script src="./assets/libs/AOS/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
